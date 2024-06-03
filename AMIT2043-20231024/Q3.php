@@ -1,0 +1,1 @@
+<a href="search.php?prodID=N101&prodName=Nike">Search Product</a>

@@ -1,0 +1,66 @@
+# Instructions:
+- This test paper is worth 100 marks.
+- You have 1 hour to complete the test.
+- Use PHP and MySQLi to complete the tasks.
+- Write clean, well-documented code.
+- Submit the complete code files and a SQL file with the database structure and sample data.
+
+## Question 1: Setting Up the Environment (20 marks)
+Create a MySQL database named `student_db`.
+Create a table named `students` with the following columns:
+- id (INT, Primary Key, Auto Increment)
+- name (VARCHAR(100))
+- age (INT)
+- email (VARCHAR(100))
+- created_at (TIMESTAMP, default current timestamp)
+
+Insert 3 sample records into the `students` table.
+
+**Mark Allocation:**
+- Creating the database and table: 10 marks
+- Inserting sample records: 10 marks
+
+## Question 2: Creating a Connection to the Database (10 marks)
+Write a PHP script named `db_connect.php` that establishes a connection to the `student_db` database. The script should:
+- Connect to the database using MySQLi.
+- Display a success message if the connection is successful.
+- Display an error message if the connection fails.
+
+**Mark Allocation:**
+- Establishing the connection using MySQLi: 5 marks
+- Displaying appropriate success or error messages: 5 marks
+
+## Question 3: Create and Display Records (30 marks)
+Create a PHP script named `create_student.php` that:
+- Provides a form for adding a new student with fields for name, age, and email.
+- On form submission, inserts the new student record into the `students` table.
+
+Create another PHP script named `view_students.php` that:
+- Fetches and displays all records from the `students` table in a tabular format.
+
+**Mark Allocation:**
+- Form creation and handling form submission: 15 marks
+- Inserting data into the database: 5 marks
+- Fetching and displaying records: 10 marks
+
+## Question 4: Update and Delete Records (40 marks)
+Create a PHP script named `manage_student.php` that:
+- Displays a list of students with options to update or delete each record.
+- Provides a form to update an existing student's details (name, age, email).
+- Takes a student ID as a parameter and deletes the corresponding record from the `students` table.
+- Displays appropriate success or error messages after each operation.
+
+**Mark Allocation:**
+- Displaying student list with update and delete options: 10 marks
+- Form to update details: 10 marks
+- Updating the record in the database: 10 marks
+- Deleting the record from the database: 10 marks
+
+**Total Marks: 100**
+
+## Submission Requirements:
+- `db_connect.php`
+- `create_student.php`
+- `view_students.php`
+- `manage_student.php`
+- SQL file with database structure and sample data (`student_db.sql`)

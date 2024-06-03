@@ -1,0 +1,75 @@
+# AMIT 2043 Web System and Technologies 
+# Make Good Test Paper (202401) G6nW#!a95Taf_9A
+
+Time: 1 hour
+Submission Time : 30 minutes
+
+# Instructions:
+- You **must** submit the test within **30 minutes** after the test ends.
+- This test paper is worth 100 marks.
+- You have 1 hour to complete the test.
+- Use PHP and MySQLi to complete the tasks.
+- Write clean, well-documented code.
+- Submit the complete code files and a SQL file with the database structure and sample data.
+- Zip all the files and submit the zip file.
+
+## Question 1: Setting Up the Environment (30 marks)
+1. Create a MySQL database named `student_db`.
+2. Create a table named `students` with the following columns:
+- id (INT, Primary Key, Auto Increment)
+- name (VARCHAR(100))
+- age (INT)
+- email (VARCHAR(100))
+
+Insert 3 sample records into the `students` table.
+
+Sample records:
+| id | name      | age | email             |
+|----|-----------|-----|-------------------|
+| 1  | John Doe  | 25  |john@example.com   |
+| 2  | Jane Doe  | 22  |jane@example.com   |
+| 3  | Alice Doe | 20  |alice@example.com  |
+
+**Mark Allocation:**
+- Creating the database and table: 15 marks
+- Inserting sample records: 15 marks
+
+Go to `student_db.sql` file write your code code for creating the database and table, and inserting sample records.
+
+> [!NOTE]
+> You should go to `phpMyAdmin`, from the menu, go to `SQL` and run the SQL file to create the database and table, and insert sample records.
+
+## Question 2: Creating a Connection to the Database (10 marks)
+Write a PHP script named `db_connect.php` that establishes a connection to the `student_db` database. The script should:
+- Connect to the database using MySQLi.
+- Display a success message if the connection is successful.
+- Display an error message if the connection fails.
+
+**Mark Allocation:**
+- Establishing the connection using MySQLi: 5 marks
+- Displaying appropriate success or error messages: 5 marks
+
+Go to `db_connect.php` file write your code for connecting to the database.
+
+## Question 3: Create and Display Records (60 marks)
+Create a PHP script named `create_student.php` that:
+- Provides a form for adding a new student with fields for name, age, and email.
+- On form submission, inserts the new student record into the `students` table.
+
+Create another PHP script named `view_students.php` that:
+- Fetches and displays all records from the `students` table in a tabular format.
+
+**Mark Allocation:**
+- Form creation and handling form submission: 20 marks
+- Inserting data into the database: 15 marks
+- Fetching and displaying records: 25 marks
+
+Go to `create_student.php` file write your code for creating a new student record.
+
+**Total Marks: 100**
+
+## Submission Requirements:
+- `db_connect.php`
+- `create_student.php`
+- `view_students.php`
+- SQL file with database structure and sample data (`student_db.sql`)
